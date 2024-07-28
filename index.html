@@ -21,6 +21,7 @@
             position: sticky;
             top: 0;
             z-index: 1000;
+            width: 100%;
         }
 
         header h1 {
@@ -34,6 +35,7 @@
             display: flex;
             justify-content: center;
             align-items: center;
+            flex-wrap: wrap;
         }
 
         nav a {
@@ -54,6 +56,8 @@
             padding: 6em 0;
             text-align: center;
             color: #fff;
+            width: 100%;
+            box-sizing: border-box;
         }
 
         .hero h2 {
@@ -67,6 +71,10 @@
         .container {
             padding: 2em 4em;
             background-color: #121212;
+            max-width: 1200px;
+            margin: 0 auto;
+            box-sizing: border-box;
+            width: 100%;
         }
 
         .section {
@@ -95,6 +103,7 @@
             box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
             width: calc(33% - 2em);
             transition: transform 0.3s ease, box-shadow 0.3s ease;
+            box-sizing: border-box;
         }
 
         .service:hover {
@@ -120,6 +129,8 @@
             text-align: center;
             padding: 1.5em 0;
             margin-top: 2em;
+            width: 100%;
+            box-sizing: border-box;
         }
 
         @media (max-width: 768px) {
