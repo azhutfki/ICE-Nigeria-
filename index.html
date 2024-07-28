@@ -1,0 +1,189 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Icetip Nigeria Limited</title>
+    <style>
+        body {
+            font-family: 'Arial', sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #121212;
+            color: #eaeaea;
+        }
+
+        header {
+            background-color: #000;
+            color: #ff6b6b;
+            padding: 1.5em 0;
+            text-align: center;
+            position: sticky;
+            top: 0;
+            z-index: 1000;
+        }
+
+        header h1 {
+            margin: 0;
+            font-size: 2.5em;
+            letter-spacing: 0.1em;
+        }
+
+        nav {
+            background-color: #1f1f1f;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+        nav a {
+            color: #ff6b6b;
+            padding: 1em 1.5em;
+            text-decoration: none;
+            font-size: 1.1em;
+            transition: background 0.3s ease, color 0.3s ease;
+        }
+
+        nav a:hover {
+            background-color: #333;
+            color: #fff;
+        }
+
+        .hero {
+            background: linear-gradient(to bottom, rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url('https://via.placeholder.com/1920x600') center/cover no-repeat;
+            padding: 6em 0;
+            text-align: center;
+            color: #fff;
+        }
+
+        .hero h2 {
+            font-size: 3em;
+            margin: 0;
+            font-weight: 300;
+            letter-spacing: 0.05em;
+            color: #ffd700;
+        }
+
+        .container {
+            padding: 2em 4em;
+            background-color: #121212;
+        }
+
+        .section {
+            margin: 2em 0;
+        }
+
+        .section h2 {
+            font-size: 2em;
+            border-bottom: 2px solid #555;
+            padding-bottom: 0.5em;
+            margin-bottom: 1em;
+            color: #1e90ff;
+        }
+
+        .services {
+            display: flex;
+            justify-content: space-around;
+            flex-wrap: wrap;
+        }
+
+        .service {
+            background-color: #1c1c1c;
+            padding: 1.5em;
+            margin: 1em;
+            border-radius: 10px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+            width: calc(33% - 2em);
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+        }
+
+        .service:hover {
+            transform: translateY(-10px);
+            box-shadow: 0 6px 12px rgba(0, 0, 0, 0.5);
+        }
+
+        .service h3 {
+            margin-top: 0;
+            font-size: 1.5em;
+            color: #ffd700;
+        }
+
+        .service p {
+            font-size: 1em;
+            line-height: 1.6em;
+            color: #d1d1d1;
+        }
+
+        footer {
+            background-color: #000;
+            color: #ff6b6b;
+            text-align: center;
+            padding: 1.5em 0;
+            margin-top: 2em;
+        }
+
+        @media (max-width: 768px) {
+            .service {
+                width: calc(50% - 2em);
+            }
+        }
+
+        @media (max-width: 480px) {
+            .service {
+                width: 100%;
+            }
+
+            nav a {
+                display: block;
+                text-align: center;
+            }
+
+            .container {
+                padding: 1em 2em;
+            }
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Icetip Nigeria Limited</h1>
+    </header>
+    <nav>
+        <a href="#home">Home</a>
+        <a href="#about">About</a>
+        <a href="#services">Services</a>
+        <a href="#contact">Mail Us</a>
+    </nav>
+    <section class="hero">
+        <h2>Building the Future, Restoring the Past</h2>
+    </section>
+    <div class="container">
+        <section id="about" class="section">
+            <h2>About Us</h2>
+            <p>Icetip Nigeria Limited is a premier construction company dedicated to delivering high-quality projects on time and within budget. Our expertise spans a variety of construction services, from residential to commercial projects.</p>
+        </section>
+        <section id="services" class="section services">
+            <h2>Our Services</h2>
+            <div class="service">
+                <h3>Residential Construction</h3>
+                <p>We build high-quality residential properties tailored to our clients' needs and preferences.</p>
+            </div>
+            <div class="service">
+                <h3>Commercial Construction</h3>
+                <p>Our commercial projects are designed to meet the highest standards of quality and efficiency.</p>
+            </div>
+            <div class="service">
+                <h3>Renovations</h3>
+                <p>We offer renovation services that breathe new life into existing structures, enhancing their value and functionality.</p>
+            </div>
+        </section>
+        <section id="contact" class="section">
+            <h2>Mail Us</h2>
+            <p>If you have any questions or would like to discuss your project, please <a href="mailto:rankmaxco@gmail.com?subject=Contact Icetip Nigeria Limited" style="color: #ff6b6b; text-decoration: underline;">mail us</a>.</p>
+        </section>
+    </div>
+    <footer>
+        <p>&copy; 2024 Icetip Nigeria Limited. All rights reserved.</p>
+    </footer>
+</body>
+</html>
